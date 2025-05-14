@@ -2435,147 +2435,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LM7805_TO220"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM7805_TO220"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 0 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Voltage Regulator 1A Positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?220*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM7805_TO220_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LM7805_TO220_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0)
@@ -3089,8 +2948,8 @@
 		(uuid 3a242156-fe3f-4f7f-abac-9823f0fe1278)
 	)
 	(rectangle
-		(start 17.78 113.03)
-		(end 106.68 160.02)
+		(start 24.13 111.76)
+		(end 113.03 158.75)
 		(stroke
 			(width 0)
 			(type default)
@@ -3099,24 +2958,6 @@
 			(type none)
 		)
 		(uuid 4581b7b0-354f-4e65-a85e-ed48ff4bab29)
-	)
-	(junction
-		(at 80.01 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2b4da9da-a7be-4d8a-9428-e16c4a0d17ae")
-	)
-	(junction
-		(at 80.01 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ac1b424-2fd4-4546-a5ca-37176bdfb8a3")
-	)
-	(junction
-		(at 93.98 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8a8e10de-9b88-4e44-ba89-ae55e5b734a1")
 	)
 	(junction
 		(at 68.58 96.52)
@@ -3129,6 +2970,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a16893fb-02de-4283-9ad5-e26a3bc779be")
+	)
+	(junction
+		(at 80.01 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b62a6830-c93d-47a5-b971-7d72444f0aba")
+	)
+	(junction
+		(at 80.01 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc8ba98d-48bf-4854-95ce-3effca6db711")
 	)
 	(no_connect
 		(at 80.01 66.04)
@@ -3182,16 +3035,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 128.27) (xy 86.36 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08b8ebe6-b412-4658-bf71-bc628875ec0e")
-	)
-	(wire
-		(pts
 			(xy 139.7 85.09) (xy 138.43 85.09)
 		)
 		(stroke
@@ -3212,6 +3055,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 138.43) (xy 80.01 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "243c1c17-73b6-49d5-ad90-8e38921bda7b")
+	)
+	(wire
+		(pts
 			(xy 135.89 55.88) (xy 135.89 58.42)
 		)
 		(stroke
@@ -3219,16 +3072,6 @@
 			(type default)
 		)
 		(uuid "28067e28-b1b7-4606-8e89-696c691da268")
-	)
-	(wire
-		(pts
-			(xy 93.98 135.89) (xy 93.98 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42d80663-927a-4a00-a500-fe9099e28242")
 	)
 	(wire
 		(pts
@@ -3309,6 +3152,16 @@
 			(type default)
 		)
 		(uuid "62171e4e-449f-4f14-ab64-5401831c2178")
+	)
+	(wire
+		(pts
+			(xy 85.09 128.27) (xy 80.01 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68ace862-cb06-4418-8f5e-60e9d784f55b")
 	)
 	(wire
 		(pts
@@ -3462,16 +3315,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 138.43) (xy 93.98 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6818a28-8598-425c-b836-7c199e4ab7c5")
-	)
-	(wire
-		(pts
 			(xy 135.89 77.47) (xy 137.16 77.47)
 		)
 		(stroke
@@ -3512,16 +3355,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 140.97) (xy 93.98 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e137291e-b65b-488e-acea-b29f9f891ca7")
-	)
-	(wire
-		(pts
 			(xy 80.01 135.89) (xy 80.01 138.43)
 		)
 		(stroke
@@ -3552,16 +3385,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 128.27) (xy 102.87 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f82c79d6-2e65-44c9-a069-41fa1d1cdc3c")
-	)
-	(wire
-		(pts
 			(xy 80.01 71.12) (xy 81.28 71.12)
 		)
 		(stroke
@@ -3588,6 +3411,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "entrada del step down"
+		(shape input)
+		(at 85.09 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03b0bba3-895c-4869-8198-01fd775af924")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.8462 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3847,6 +3692,28 @@
 		(uuid "56d602e0-e238-41bc-913a-27cb0d60df4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.0493 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "entrada del step down"
+		(shape input)
+		(at 46.99 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5c1be3d1-b1dd-4954-8445-883a74ebe68f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.7462 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,6 +4226,72 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 46.99 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01447614-1894-4f2c-918a-82f349782059")
+		(property "Reference" "#PWR06"
+			(at 46.99 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "105af5d0-8d80-4b62-8e97-e7d0144fa9ed")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "#PWR06")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5055,7 +4988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm"
+		(property "Footprint" "llave depalanca:SW_100SP1T1B1M1QEH"
 			(at 57.15 128.27 0)
 			(effects
 				(font
@@ -5092,72 +5025,6 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 102.87 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39d666c1-bd3f-4060-bbaa-93b0a70f78f8")
-		(property "Reference" "#PWR04"
-			(at 102.87 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 102.87 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 102.87 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f7810f2b-9f20-4a26-931c-078f982a7897")
-		)
-		(instances
-			(project ""
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5224,6 +5091,139 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 90.17 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "443137c8-f485-4b3e-bac0-70e505fd4fcc")
+		(property "Reference" "#PWR023"
+			(at 90.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 90.17 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55d33bfb-5e91-406d-b26a-70bd024c1aa0")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 41.91 151.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4828e393-43ae-463a-aa04-f0a73cc92858")
+		(property "Reference" "J9"
+			(at 41.656 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ENTRADA_STEPDOWN"
+			(at 41.91 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 41.91 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 41.91 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d477fc8-15b7-4940-b7f3-f64be56f840a")
+		)
+		(pin "1"
+			(uuid "04874854-20e6-41ec-ae2f-ee3ad4a981c0")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -5442,6 +5442,75 @@
 			(project "Sumo-Michi-Go"
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 95.25 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67b00297-f893-4398-bec4-c137d22be6bf")
+		(property "Reference" "J10"
+			(at 97.79 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SALIDA_STEPDOWN"
+			(at 92.456 145.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18e66c96-ddb8-40d8-87fb-172ca8cbf007")
+		)
+		(pin "1"
+			(uuid "00f06e02-554b-4ac8-b4c1-819b3ab58b2e")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -5778,6 +5847,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 83.82 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d77216b-39e2-4d25-b294-5da4d7707e5b")
+		(property "Reference" "#PWR04"
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1dda5cce-014c-4cd3-825a-9c85db75a335")
+		)
+		(instances
+			(project ""
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 133.35 99.06 0)
 		(unit 1)
@@ -5980,78 +6115,6 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM7805_TO220")
-		(at 93.98 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b04c4a7f-0846-409f-b879-f5bdcac1b982")
-		(property "Reference" "U2"
-			(at 93.98 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM7805_TO220"
-			(at 93.98 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 93.98 122.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-			(at 93.98 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
-			(at 93.98 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "169b0198-8caa-4bc1-a52d-fec694831c7e")
-		)
-		(pin "2"
-			(uuid "7597ec5b-3efa-41fb-9cf0-64fbde3697e4")
-		)
-		(pin "1"
-			(uuid "0bfcfad5-a9f4-4a31-8349-62bb96a95e8f")
-		)
-		(instances
-			(project ""
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -6659,72 +6722,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 93.98 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e4c2f338-d557-421c-b50e-bbef4d319b4c")
-		(property "Reference" "#PWR06"
-			(at 93.98 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 93.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6e61610-216b-4568-897d-81cc6d10d5e2")
-		)
-		(instances
-			(project ""
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 41.91 138.43 180)
 		(unit 1)
@@ -6787,6 +6784,72 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 90.17 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2bb3115-aa57-4ede-b346-f6b37c271642")
+		(property "Reference" "#PWR022"
+			(at 90.17 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 90.17 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 90.17 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9765275e-4d4c-4152-b774-1cd367f4604d")
+		)
+		(instances
+			(project ""
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
