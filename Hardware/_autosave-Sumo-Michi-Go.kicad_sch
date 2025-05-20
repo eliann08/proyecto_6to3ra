@@ -3475,7 +3475,7 @@
 			)
 		)
 	)
-	(global_label "ENTRADA_STEPDOWN"
+	(global_label "entrada_stepdown"
 		(shape input)
 		(at 80.01 128.27 0)
 		(fields_autoplaced yes)
@@ -3485,9 +3485,9 @@
 			)
 			(justify left)
 		)
-		(uuid "2b50011d-83c2-4375-97a7-3e1692d0a1aa")
+		(uuid "2d938ef0-8113-40ba-89e4-52d54cd3a180")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.1056 128.27 0)
+			(at 99.9282 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,28 +3559,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ENTRADA_STEPDOWN"
-		(shape input)
-		(at 34.29 148.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3bdd3d16-08f1-4c27-89f7-f5799408bbb9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.3856 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3708,6 +3686,28 @@
 		(uuid "56d602e0-e238-41bc-913a-27cb0d60df4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.0493 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "entrada_stepdown"
+		(shape input)
+		(at 31.75 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f5fcaf6-a202-4a9c-a1ce-92f140068147")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.6682 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4530,6 +4530,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 73.66 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14aaacff-88eb-47bf-8b0e-fe8c9361b95e")
+		(property "Reference" "J10"
+			(at 76.2 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ENTRADA"
+			(at 76.2 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 73.66 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 73.66 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c1fc41b2-2f88-41b6-a337-e4f3b6dd5c78")
+		)
+		(pin "1"
+			(uuid "eedd0758-4a4e-4e44-a38b-fff276ebaf5a")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x09_Pin")
 		(at 173.99 49.53 180)
 		(unit 1)
@@ -5025,72 +5095,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 34.29 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a67e835-85f9-4604-8465-6463e71c50ea")
-		(property "Reference" "#PWR022"
-			(at 34.29 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 34.29 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9abd0325-8cc3-4454-852c-11f64efbb0c0")
-		)
-		(instances
-			(project "Sumo-Michi-Go"
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 80.01 132.08 90)
 		(unit 1)
@@ -5170,74 +5174,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 29.21 151.13 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4edffcc8-3102-4246-828e-101758a7abd3")
-		(property "Reference" "J9"
-			(at 29.21 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ENTRADA"
-			(at 29.21 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
-			(at 29.21 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 29.21 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ec2edc7d-b8f3-4c7c-99fd-8a15fe1409e0")
-		)
-		(pin "1"
-			(uuid "c2085f1b-32c5-4068-8d2c-83794bc202a1")
-		)
-		(instances
-			(project "Sumo-Michi-Go"
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 163.83 72.39 0)
 		(unit 1)
@@ -5305,6 +5241,140 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55616291-f638-4878-b355-c4535a40e98b")
+		(property "Reference" "#PWR022"
+			(at 31.75 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3618f310-36d9-42b5-83a6-7958019bc2ba")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 26.67 147.32 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "621afeb3-380c-4e8a-a5a4-e9a1f1321bad")
+		(property "Reference" "J9"
+			(at 26.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ENTRADA"
+			(at 26.67 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 26.67 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 26.67 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18bea7e4-f912-4a23-848b-a6044a4810f0")
+		)
+		(pin "1"
+			(uuid "ef9e719e-ad32-43cd-b50b-66a9483d9931")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -5437,6 +5507,72 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 68.58 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "731944e4-f3bd-4569-98ef-0071c81cfa54")
+		(property "Reference" "#PWR024"
+			(at 68.58 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 68.58 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 68.58 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b67b3a28-da9d-4872-913b-8ff72b92ec7b")
+		)
+		(instances
+			(project "Sumo-Michi-Go"
+				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5847,33 +5983,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 66.04 147.32 0)
+		(lib_id "power:GND")
+		(at 68.58 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e017101-e5ac-477f-9fac-e4df21b25707")
-		(property "Reference" "J10"
-			(at 66.04 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ENTRADA"
-			(at 66.04 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
-			(at 66.04 147.32 0)
+		(uuid "a4a45f00-ceef-4c42-9b78-99af91e31ce1")
+		(property "Reference" "#PWR023"
+			(at 68.58 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5881,8 +6001,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 66.04 147.32 0)
+		(property "Value" "GND"
+			(at 68.58 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,8 +6018,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 66.04 147.32 0)
+		(property "Datasheet" ""
+			(at 68.58 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5899,16 +6027,22 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "59086e4a-ae1f-4c45-bf08-8348b76b3c60")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "0949de31-7365-4b79-a275-d438dfb34cea")
+			(uuid "768a780f-7921-4f12-af84-dc6a0257905e")
 		)
 		(instances
 			(project "Sumo-Michi-Go"
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "J10")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -6321,72 +6455,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd9da5df-5fdd-4476-862f-4642479806b7")
-		(property "Reference" "#PWR023"
-			(at 60.96 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ee1048e-98c2-43ca-85ad-5b3faa288348")
-		)
-		(instances
-			(project "Sumo-Michi-Go"
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 179.07 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6644,72 +6712,6 @@
 			(project ""
 				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 60.96 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfe72f24-de69-4b96-9f2f-393498bae4af")
-		(property "Reference" "#PWR04"
-			(at 60.96 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 60.96 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 60.96 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d6cc8ca7-6a36-4d79-8738-a5561eff2561")
-		)
-		(instances
-			(project ""
-				(path "/655df61d-d00a-4513-81a8-edc06fd226df"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
